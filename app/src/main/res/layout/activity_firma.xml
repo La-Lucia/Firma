@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Firma"
+    android:orientation="horizontal">
+
+    <com.example.firmas.ObtenerBitmap
+        android:id="@+id/firma"
+        android:layout_width="412dp"
+        android:layout_height="463dp"
+        android:layout_marginBottom="331dp" />
+
+
+    <Button
+        android:id="@+id/BtnGuardarFirma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/firma"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="-119dp"
+        android:backgroundTint="#009688"
+        android:onClick="guardarImagen"
+        android:text="Guardar"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="629dp" />
+
+    <EditText
+        android:id="@+id/TxtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/firma"
+        android:layout_marginBottom="-70dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/BtnLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/firma"
+        android:layout_marginBottom="-163dp"
+        android:backgroundTint="#009688"
+        android:onClick="ListaFirmas"
+        android:text="Lista de Firmas"
+        tools:layout_editor_absoluteX="273dp"
+        tools:layout_editor_absoluteY="629dp" />
+
+
+</RelativeLayout>
